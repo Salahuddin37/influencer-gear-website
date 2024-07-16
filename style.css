@@ -5,7 +5,7 @@
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    /* font-variation-settings:"slnt" 0; */
+    font-variation-settings:"slnt" 0;
   }
 
   /* shared related design */
@@ -31,11 +31,9 @@
     list-style: none;    
     text-decoration: none;       
     align-items: center; 
-    font-weight: 700;
-    
-    
-    
+    font-weight: 700;      
   }
+
   .nav-title{
     font-weight: 800;
     font-size: 18px;
@@ -53,3 +51,94 @@
     height: 28px; 
     vertical-align: middle;       
 }
+
+/* ----------------------------------influencer section desing-----------------------------*/
+.influencer-container{
+    display: flex;
+    max-width: 1350px;
+    gap: 250px;    
+    margin: 0 auto;
+    
+}
+.influencer-content{
+    max-width: 600px;
+    max-height: 400px;
+    margin:160px 0px;
+    
+    
+}
+.bg-cover-section img{    
+    max-width: 380px;
+    max-height: 400px; 
+    padding: 10px;
+    margin: 100px 0px;
+  
+}
+.bg-cover-section{    
+    background-image: url("images/Circle\ design.svg");
+    background-position: center;
+    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;    
+      
+}
+.influencer-title{
+    font-size: 3rem;
+    
+}
+.influencer-description{
+    font-weight: 600;
+    margin-top: -15px;
+}
+
+/* -----------------------influencer button design---------------------- */
+.preebook-button{
+    background-color: rgba(224, 44, 109, 1);
+    border-radius: 30px;
+    border: none;
+    padding: 14px 30px;
+    color: white;
+    font-weight: 700;
+    font-size: 1rem;
+}
+.preebook-button::after {
+    content: '→';
+    margin-left: 5px;
+    
+}
+
+/* ----------------------styles for small device------------------------ */
+@media screen and (max-width: 576px) {
+    .nav-container, .nav-item{
+        display: flex;
+        flex-direction: column;
+        margin: 5px;
+        
+        text-align: center;
+    }
+    .nav-item{
+      font-size: 5px;
+    }
+     
+    .influencer-container{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .bg-cover-section img{    
+      max-width: 300px;
+      max-height: 300px;  
+      margin: 40px; 
+      border: 2px solid red; 
+    }
+    .bg-cover-section{
+      background-image: none;
+      display: block;
+    }
+    .influencer-title{
+      font-size: 2rem;
+      margin-top: -400px;
+    }
+  }
+
+  
+
