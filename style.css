@@ -3,7 +3,53 @@
 .inter-font {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
-    font-weight: weight;
+    font-weight: 400;
     font-style: normal;
-    font-variation-settings:"slnt" 0;
+    /* font-variation-settings:"slnt" 0; */
   }
+
+  /* shared related design */
+  .font-color{
+    color: #3A3A3A
+  }
+  .font-size{
+    font-size: 0.9rem;
+  }
+
+  /* nav related design */
+  .nav-container{
+   display: flex;
+   max-width: 1350px;
+   padding-top: 20px;   
+   margin: 0 auto;   
+   justify-content: space-between;
+     
+  }
+  .nav-item{
+    display: flex;
+    gap: 25px;
+    list-style: none;    
+    text-decoration: none;       
+    align-items: center; 
+    font-weight: 700;
+    
+    
+    
+  }
+  .nav-title{
+    font-weight: 800;
+    font-size: 18px;
+  }
+  .nav-link{
+    text-decoration: none;
+  }
+  .nav-item .unique1{
+        width: 18px; 
+        height: 18px; 
+        vertical-align: middle;       
+  }
+  .nav-item .unique2{
+    width: 28px; 
+    height: 28px; 
+    vertical-align: middle;       
+}
