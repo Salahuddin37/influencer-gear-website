@@ -7,6 +7,10 @@
     font-style: normal;
     font-variation-settings:"slnt" 0;
   }
+  *{
+    margin: 0;
+    
+  }
 
   /* shared related design */
   .font-color{
@@ -59,11 +63,13 @@
     gap: 100px;    
     margin: 0 auto;
     
+    
 }
 .influencer-content{
     max-width: 700px;
     max-height: 400px;
     margin:160px 0px;
+    
 
 }
 .bg-cover-section img{    
@@ -83,11 +89,13 @@
 }
 .influencer-title{
     font-size: 3rem;
+    padding-bottom: 20px;
     
 }
 .influencer-description{
     font-weight: 600;
     margin-top: -10px;
+    padding-bottom: 20px;
 }
 
 /* -----------------------influencer button design---------------------- */
@@ -95,7 +103,7 @@
     background-color: rgba(224, 44, 109, 1);
     border-radius: 30px;
     border: none;
-    padding: 14px 30px;
+    padding: 10px 25px;
     color: white;
     font-weight: 700;
     font-size: 1rem;
@@ -103,6 +111,7 @@
 .preebook-button::after {
     content: '→';
     margin-left: 5px;
+    font-weight: bolder;
     
 }
 /* ------------logo design------------- */
@@ -122,13 +131,78 @@
 }
 
 /* features related sytles */
-/* .features-containter{
+.features-containter{
   width: 80%;
+  height: 270px;
   display: flex;
-} */
+  margin: 0 auto;
+  margin-top: 100px;
+
+}
+.features-content{
+  padding: 40px 0px 100px 130px;
+}
+.features-title{
+  font-size: 2.5rem;
+  width: 100%;
+  padding-bottom: 20px;
+}
+.features-description{
+  font-weight: 600;
+  line-height: 20px;
+  padding-bottom: 20px;
+  width: 70%;
+}
+.features-btn{
+  background-color: rgb(224, 44, 109);
+  padding: 10px 25px;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+}
+.features-btn::after{
+  content: '→';
+  margin-left: 5px;
+  font-weight: bolder;
+}
+
+/* footer section design */
+.footer-container{
+  width: 100%;
+  padding: 40px 0;
+  background-color: rgb(10, 8, 38);
+  margin: 100px 0px 0 0;
+
+}
+.footer-content{
+  display: flex;
+  justify-content: center;
+}
+.footer-child{
+  color: white;
+  text-align: center;
+}
+.footer-child .footer-img{
+  width: 20px;
+  height: 20px;
+  padding-right: 10px;
+}
+.copy-right{
+  font-size: 12px;
+  padding-top: 5px;
+}
+.all-right{
+  font-size: 12px;
+  padding-top: 5px;
+}
 /* ----------------------styles for small device------------------------ */
 @media screen and (max-width: 576px) {
-    .nav-container, .nav-item, .influencer-container, .logo-container{
+    .nav-container, 
+    .nav-item, 
+    .influencer-container, 
+    .logo-container, 
+    .features-containter{
         display: flex;
         flex-direction: column;
         text-align: center;
@@ -138,7 +212,8 @@
     }
     .bg-cover-section{
       background-image: none;
-      display: block;
+      margin-top: -300px;
+      margin-left: -50px;
     }
     .influencer-title{
       font-size: 2rem;
@@ -149,8 +224,25 @@
       width: 40px;
       height: 300px;
     }
+    .features-containter{
+      width: 100%;
+      
+    }
+    .features-description, .features-title{
+      width: 100%; 
+      align-items: center;
+      
+    }
+    .features-content{
+      padding: 0px 0px ;
+      
      
   }
+  .footer-container{
+    margin-top: 300px;
+    padding-left: 30px;
+  }
+}
 
   
 
